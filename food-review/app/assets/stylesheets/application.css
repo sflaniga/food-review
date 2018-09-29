@@ -13,3 +13,211 @@
  *= require_tree .
  *= require_self
  */
+header.masthead {
+    margin-bottom: 50px;
+    background: url('../images/background.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #212529;
+  opacity: 0.5;
+}
+
+header.masthead .site-heading {
+  padding: 200px 0 150px;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  header.masthead .site-heading {
+    padding: 200px 0;
+  }
+}
+
+header.masthead .site-heading {
+  text-align: center;
+}
+
+header.masthead .site-heading h1 {
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+header.masthead .site-heading .subheading {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.1;
+  display: block;
+  margin: 10px 0 0;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  header.masthead .site-heading h1 {
+    font-size: 80px;
+  }
+}
+
+.restaurant-item {
+  margin-bottom: 30px;
+}
+
+/* Review Card*/
+.fa-star {
+    color: #ffc107;
+}
+
+/* Nav styles */
+.navbar {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    z-index: 999;
+}
+.nav-item a {
+    color: #fff;
+}
+.nav-item a:hover {
+    color: #ccc;
+}
+
+/* Input Styles */
+input[type=text].form-control:focus {
+    outline: none!important;
+    border-color: transparent!important;
+    box-shadow: none!important;
+    tran: none;
+}
+
+footer {
+    margin-top: 50px;
+}
+footer a {
+    color: #fff!important;
+}
+
+/*=================================
+Restaurant Styles
+ ==================================*/
+header.restaurant {
+    background: url('../images/restaurant.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+    margin-bottom: 40px;
+}
+header.restaurant .page-heading {
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    header.restaurant .page-heading {
+        padding: 125px 0;
+    }
+}
+
+header.restaurant .page-heading {
+    text-align: center;
+}
+
+header.restaurant .page-heading h1 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+header.restaurant .page-heading .subheading {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.1;
+    display: block;
+    margin: 10px 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+    header.restaurant .page-heading h1 {
+        font-size: 80px;
+    }
+}
+
+.restaurant-info {
+    min-height: 50vh;
+}
+
+
+/* Restaurant Reviews */
+.review:not(:first-child) {
+    margin-top: 15px;
+}
+.review-name {
+    font-weight: 400;
+    font-size: 20px;
+}
+.review-date {
+    color: #999;
+    font-size: 10px;
+    line-height: 30px;
+}
+.review-star {
+    list-style-type: none;
+    font-size: 10px;
+    padding-top: 5px;
+}
+
+/* Restaurant Info */
+.hours-table td {
+    padding: 5px;
+    border-top: none!important;
+}
+.hours-table tr td:not(:first-child) {
+    text-align: right;
+}
+
+/*=================================
+Profile Styles
+ ==================================*/
+header.profile-background {
+    background: url('../images/profile.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+    height: 300px;
+}
+.profile {
+    border-bottom: 1px solid rgba(230, 230, 230, 0.9);
+    padding-bottom: 30px;
+}
+.profile-about {
+    padding: 20px;
+}
+.profile-image {
+    margin-top: -5vh;
+    width: 200px;
+    height: 200px;
+}
+.profile-social {
+    padding-top: 20px;
+}
+.profile-social h5 {
+    padding-bottom: 5px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+.profile-social ul {
+    list-style-type: none;
+}
+.profile-social ul li {
+    display: inline-block!important;
+    padding: 5px;
+}
+.profile-activity {
+    min-height: 50vh;
+    margin-top: 30px;
+}
